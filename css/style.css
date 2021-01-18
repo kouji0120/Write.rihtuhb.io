@@ -1,0 +1,325 @@
+@charset "UFT-8";
+
+body{
+    font-family: Georgia, 游明朝, YuMincho, "Hiragino Mincho ProN", Meiryo, serif;
+    line-height: 1.8;
+    max-width: 1035px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.header-logo{
+    color: #111;
+}
+.header-left{
+    line-height: 1.4;
+    
+}
+.header-left h1 a{
+    font-size: 36px;
+    text-decoration: none;
+    color: #111111;
+}
+.header-left p{/*書くためのテーマ*/
+    font-size: 18px;
+    color: #777777;
+}
+.header-top{
+    display: flex;
+    justify-content: space-between;
+}
+.header-nav-list{/*ul*/
+    display: flex;
+    margin-right: 230px;
+}
+.header-nav-list li{
+    
+    list-style: none;/*すべての・を消す 要素には直接指定できない*/
+}
+.header-nav-list li a{
+    text-decoration: none;/*下線を消す*/
+    font-size: 17px;
+    color: #111111;
+    font-style: normal;
+}
+.header-nav{
+    display: flex;
+    margin-top: 45px;
+    position: relative;
+}
+.relative{
+    position: relative;
+}
+.search_container{
+    position: absolute;
+    right: 0;
+}
+
+
+.submit1{/*検索アイコン*/
+background: url(../images/search-icon.png) 5px center no-repeat;
+background-size: 24px 24px;
+border: none;
+cursor: pointer;/*最初はポインターで。*/
+height: 40px;
+
+outline: 0;
+padding: 0 0 0 34px;
+transition: width .4s ease, background .4s ease;/*0.4秒かけて背景が#fff、幅が240pxに。easeは緩やかに変化する*/
+width: 1px;
+}
+input:focus{
+    background-color: #fff;
+    border: solid 1px #e6e6e6;
+    cursor: text;/*ポインターからテキストに*/
+    
+    width: 240px;
+
+}
+
+.fade-nav1,.fade-nav2{/*ulから指定しないとli要素すべてがkijyunnを基準に重なってしまう*/
+    position: absolute;/*親:/.relative*/
+    right: -85px;
+    top: 40px;
+    
+}
+.fade-nav1 li,.fade-nav2 li{
+    white-space: nowrap
+}
+i{
+    display:block;
+    padding-left: 11px;
+} 
+
+/*navタッチ範囲---------------------------*/
+.ku-shaped1,
+.ku-shaped2,
+.ku-shaped{/*navのタッチ範囲を広げた*/
+    padding:10px 30px 20px 0; 
+}
+
+/*fede-nav-------------------------*/
+
+.sub-list1 a{/*カスタマイズ*/
+    display: block;
+    padding: 10px 70px 10px 20px;
+    border: 1px #ede9df solid; 
+    box-shadow:0px 0px 0.5px;
+    background-color:white;
+}
+.sub-list a{/*タイポグラフィー お問い合わせ*/
+    display: block;
+    padding: 10px 40px 10px 16px;
+    border: 1px  #ede9df solid;
+    box-shadow:0px 0px 0.5px;
+    border-bottom:0; /*下線を消す*/
+    background-color:white;
+}
+
+/*hoverイベント*/
+.header-nav-list li a:hover,
+.sub-title:hover,.box3 ul li a:hover,.box4 ul a:hover{
+   color: #c49029;
+}
+.header-logo:hover{
+    color: #111111;
+ }
+.fade-nav1,
+.fade-nav2{/*ulを消す*/
+    visibility: hidden;
+    height: 30px;
+}
+.list:hover .fade-nav1{
+visibility: visible;
+}
+.list1:hover .fade-nav2{
+    visibility: visible;
+    }
+@keyframes fade-in{
+    0% {
+      visibility: hidden;
+      opacity: 0;
+    }
+  
+    50% {
+      visibility: visible;
+      opacity: 0.5;
+    }
+  
+    100% {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+
+.list:hover .fade-nav1{
+	animation-name: fade-in;
+    animation-duration:0.2s;
+}
+.list1:hover .fade-nav2{
+	animation-name: fade-in;
+    animation-duration:0.2s;
+}
+
+.wrapper{
+    border-bottom:1px #ddd solid;
+    padding-bottom: 115px;
+}
+
+
+
+
+
+/*大きな背景画像*/
+#main-img{
+    background-image: url(../images/cropped-nicole-honeywill-730102-unsplash\ \(1\).jpg);
+    min-height: 100vh;
+    margin-top: 78px;
+}
+.big-bg{
+    background-size:cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+h2{
+    margin-top: 102px;
+    margin-bottom: 119px;
+    font-size: 27px;
+    color: #777777;
+    font-weight: normal;
+}
+section .container{
+    display: flex;
+}
+.aside1{
+width: 32%;
+}
+article{
+    width: 68%;
+}
+section{
+    margin-bottom: 92px;
+}
+section a{
+    text-decoration: none;
+}
+.month{
+    color: #777777;
+    font-size: 17px;
+}
+.sub-title{
+    display: block;
+color: #111111;
+font-size: 22px;
+font-weight: 700;
+margin-bottom: 36px;
+}
+.nav-bottom{
+   text-align: center;
+}
+.nav-bottom a{
+    padding:16px 18px;
+    border: 1px  #ede9df solid;
+    box-shadow:0px 0px 0.5px;
+    color: #777777;
+    margin-left:12px ;
+}
+.nav-bottom a:hover{
+    color: #333333;
+    border:1px #ddd solid;
+}
+
+h3{
+    color: #333333;
+}
+.sub-date{
+    display: flex;
+}
+.culm{
+  flex-direction: column;
+  margin:21px 0 0 20px;
+  border-bottom: none;
+}
+.culm a{
+    border-bottom: 0;
+}
+
+.profile-img{
+    max-width: 100px;
+    max-height: 100px;
+    border-radius: 50%;
+}
+
+.footer-contents{
+    display: flex;
+    justify-content: space-between;
+        border-bottom:1px #ddd solid;
+        font-size: 17px;
+    color: #777777;
+    padding-bottom: 90px;
+}
+aside{
+    width: 30%;
+    line-height: 1.7;
+}
+.box3 p{
+    font-size: 15px;
+font-weight: 400;
+}
+
+
+.footer-contents a{
+   
+text-decoration: none;
+border-bottom:1px #ddd solid;
+    color: #333333;
+}
+.footer-contents li{
+    list-style: none;
+}
+
+.box2{
+    margin-left: 88px;
+}
+.box3{
+    margin-left: 44px;
+}
+h4{
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #111111;
+}
+
+.box3 ul li,
+.box4 ul li{
+margin-bottom: 17px;
+}
+.box4 form{
+    margin-top: 94px;
+}
+.top-profile-date p{
+    margin-top: 25px;
+}
+
+.footer-bottom{
+    display: flex;
+}
+.sns-box li{
+    list-style: none;
+}
+.sns-box ul li a i{
+    width: 21px;
+    height: 21px;
+}
+.footer-bottom p{
+margin: 0 auto;
+}
+
+footer{
+    padding: 66px 0;
+}
